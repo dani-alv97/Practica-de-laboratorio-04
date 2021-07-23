@@ -42,6 +42,9 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: java-app
+        
+    - download: current
+      artifact: WebApp
 
     - name: Deploy to Azure Web App
       id: deploy-to-webapp
